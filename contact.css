@@ -1,0 +1,21 @@
+h1{
+    width: 100%;
+    height: 30%;
+}
+body{
+    background-image: linear-gradient(red, black, red);
+    width: 100%;
+    height: 50%;
+}
+form{
+    margin: 16%;
+    padding: 0;
+    background-image: url(Kagura.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+label{
+    font: bold;
+    font-size-adjust: 10;
+}
