@@ -7,7 +7,7 @@ app.set('view engine', 'ejs'); //Sets EJS as view engine
 app.use(express.static('public')); //Serve static files from 'main' directory
 
 app.get('/', (req, res) => 
-{res.render('homepage', {title: 'Home Page', content: 'Welcome to my Home page.'})
+{res.render('homepage', {title: 'Home Page'})
 });
 
 app.get('/', (req, res) => 
@@ -22,6 +22,9 @@ app.get('/', (req, res) =>
 {res.render('contact', {title: 'Contact'})
 });
 
+const routes = require('./controllers/index');
+app.use('/', routes);
+
 app.listen(port, () =>{
-    console.log('Server is running on port ${port}')
+    console.log('Server is running on https://localhost:${port}')
 });
