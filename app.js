@@ -7,7 +7,7 @@ app.set('view engine', 'ejs'); //Sets EJS as view engine
 app.use(express.static('public')); //Serve static files from 'main' directory
 
 app.get('/', (req, res) => 
-{res.render('home', {title: 'Home Page', content: 'Welcome to my Home page.'})
+{res.render('homepage', {title: 'Home Page', content: 'Welcome to my Home page.'})
 });
 
 app.get('/', (req, res) => 
@@ -15,7 +15,7 @@ app.get('/', (req, res) =>
 });
 
 app.get('/', (req, res) => 
-{res.render('about', {title: 'About Me'})
+{res.render('aboutme', {title: 'About Me'})
 });
 
 app.get('/', (req, res) => 
